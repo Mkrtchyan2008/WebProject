@@ -1,0 +1,502 @@
+  @media (max-width: 768px) {
+    .side-menu {
+      width: 85%;
+      right: -90%;
+    }
+
+    .contact-text {
+      display: none;
+    }
+
+    .nav-content {
+      padding: 10px;
+    }
+
+    .contact-text {
+      display: none;
+    }
+
+    .sec-1 {
+      background-image: none !important;
+      min-height: 0px;
+
+    }
+
+    .sec-2 .content-1 {
+      max-width: 380px;
+      height: 450px;
+      margin-top: -80px;
+      margin-left: 5px;
+
+      & img {
+        object-fit: contain;
+        max-width: 390px;
+        height: 450px;
+      }
+    }
+
+    .sec-2 .content-2 {
+      max-width: 380px;
+    }
+
+    .top-bar-content {
+      justify-content: space-between;
+      /* Նույնիսկ փոքր էկրանին կմնան հակառակ կողմերում */
+      padding: 0 10px;
+    }
+
+    .social-icons {
+      gap: 10px;
+      /* Փոքր էկրանին պատկերակների արանքը մի քիչ կփոքրանա */
+    }
+
+    .working-hours {
+      font-size: 12px;
+      /* Տեքստը մի փոքր փոքրացնում ենք */
+    }
+
+
+  }
+
+  @media (max-width: 1600px) {
+    .sec-2 .contents {
+      padding-left: 300px;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .sec-2 .contents {
+      padding-left: 200px;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .sec-2 .contents {
+      flex-direction: column;
+    }
+
+  }
+
+  @media (max-width: 430px) {
+    .sec-5 .about-paragraph {
+      font-size: 16px;
+    }
+
+    .sec-6 {
+      & .firts-img {
+        display: none;
+      }
+
+      & .content-2 {
+        flex-wrap: wrap;
+        padding-left: 30px;
+      }
+
+      & .content-3 {
+        flex-wrap: wrap;
+        padding-left: 60px;
+        padding-top: 30px;
+
+      }
+
+    }
+
+    .footer-booking img {
+      display: none;
+    }
+
+    .footer-container {
+      height: 350px;
+    }
+
+    .working-hours {
+      display: none;
+      flex: end;
+    }
+
+    .social-icons {
+
+      margin-left: auto;
+
+    }
+
+    .sec-8 h2 {
+      padding-left: 30px;
+    }
+
+    .sec-2 .contents {
+      padding-left: 0px;
+    }
+
+    .sec-5 h2 {
+      margin-left: -350px;
+      font-size: 20px;
+      width: 300px;
+    }
+
+    .sec-6 .content-4 img {
+      display: none;
+    }
+
+    .none-content {
+      display: active;
+    }
+
+    .none-content {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        color: #002d1a;
+        font-size: 20px;
+        font-weight: 900;
+        width: 420px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+      }
+
+      .second {
+        color: #002d1a;
+        font-size: 38px;
+        font-weight: 600;
+        width: 420px;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: sans-serif;
+      }
+
+      .brand {
+        color: green;
+      }
+    }
+    .sec-3 .about-paragraph {
+      font-size: 18px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      text-align: left;
+    }
+    .sec-5 .about-paragraph {
+      font-size: 18px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 390px) {
+    .sec-2 .content-1 {
+      max-width: 340px;
+      height: 450px;
+      margin-top: -80px;
+      margin-left: 5px;
+
+      & img {
+        object-fit: contain;
+        max-width: 390px;
+        height: 450px;
+      }
+    }
+
+    .none-content {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        color: #002d1a;
+        font-size: 20px;
+        font-weight: 900;
+        width: 420px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+      }
+
+      .second {
+        color: #002d1a;
+        font-size: 34px;
+        font-weight: 600;
+        width: 420px;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: sans-serif;
+      }
+
+      .brand {
+        color: green;
+      }
+    }
+
+    .sec-2 .content-2 {
+      max-width: 340px;
+    }
+  }
+
+
+  @media (max-width: 414px) {
+    .none-content {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        color: #002d1a;
+        font-size: 20px;
+        font-weight: 900;
+        width: 370px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+      }
+
+      .second {
+        color: #002d1a;
+        font-size: 34px;
+        font-weight: 600;
+        width: 370px;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: sans-serif;
+      }
+    }
+    .sec-3 .about-paragraph {
+      font-size: 19px;
+      line-height: 1.35;
+      letter-spacing: -0.5px;
+      word-spacing: -0.5px;
+      text-align: left;
+    }
+    .sec-5 .about-paragraph {
+      font-size: 19px;
+      line-height: 1.35;
+      letter-spacing: -0.5px;
+      word-spacing: -0.5px;
+      text-align: left;
+    }
+
+  }
+
+  @media (max-width: 430px) {
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-left: 270px;
+      padding-bottom: 10px;
+    }
+
+    .contact-info {
+      display: none;
+    }
+
+    .sec-6 .pahest {
+      display: block;
+      font-size: 30px;
+      text-align: center;
+      color: green;
+      font-weight: 700;
+    }
+
+    .sec-3 .about-paragraph {
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      text-align: left;
+    }
+
+    .sec-4 .about-paragraph {
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: -0.2px;
+      text-align: left;
+    }
+  }
+
+
+  @media (max-width: 420px) {
+
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-left: 250px;
+      padding-bottom: 10px;
+
+    }
+
+  }
+
+  @media (max-width: 430px) {
+    .sec-6 .cont-1 img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain;/* Նկարը կծածկի ամբողջ տարածքը, առանց հարաբերությունները խախտելու */
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-left: 220px;
+      padding-bottom: 10px;
+
+    }
+
+  }
+
+
+
+  @media (max-width: 360px) {
+    .sec-2 .content-1 {
+      max-width: 320px;
+      height: 450px;
+      margin-top: -80px;
+      margin-left: 5px;
+
+      & img {
+        object-fit: contain;
+        max-width: 340px;
+        height: 450px;
+      }
+    }
+
+    .sec-2 .content-2 {
+      max-width: 320px;
+
+    }
+
+    .main-header {
+      width: 375px;
+    }
+
+
+
+  }
+
+
+
+  @media (max-width: 576px) {
+    .sec-6 .cont-1 img {
+      max-width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    
+  }
+
+  @media (max-width: 390px) {
+    .sec-6 .cont-1 img {
+      width: 100% !important;
+      height: auto !important;
+      object-fit: contain;/* Նկարը կծածկի ամբողջ տարածքը, առանց հարաբերությունները խախտելու */
+    }
+
+    .sec-6 .content-2 img {
+      max-width: 80%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .none-content {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        color: #002d1a;
+        font-size: 18px;
+        font-weight: 900;
+        width: 390px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+      }
+
+      .second {
+        color: #002d1a;
+        font-size: 34px;
+        font-weight: 600;
+        width: 390px;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: sans-serif;
+      }
+
+      .brand {
+        color: green;
+      }
+    }
+    .sec-3 .about-paragraph {
+      font-size: 18px;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+      word-spacing: -1px;
+      text-align: left;
+    }
+    .sec-5 .about-paragraph {
+      font-size: 18px;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+      word-spacing: -1px;
+      text-align: left;
+    }
+  }
+
+
+  @media (max-width: 375px) {
+    .main-header {
+      width: 375px;
+    }
+    .none-content {
+      display: block;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .first {
+        color: #002d1a;
+        font-size: 16px;
+        font-weight: 900;
+        width: 330px;
+        padding-left: 30px;
+        padding-top: 30px;
+
+      }
+
+      .second {
+        color: #002d1a;
+        font-size: 30px;
+        font-weight: 600;
+        width: 330px;
+        padding-left: 30px;
+        padding-top: 10px;
+        font-family: sans-serif;
+      }
+    }
+
+    .sec-6 .pahest {
+      display: block;
+      font-size: 30px;
+      text-align: center;
+      color: green;
+      font-weight: 700;
+    }
+
+    .sec-3 .about-paragraph {
+      font-size: 14px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+      word-spacing: -1px;
+      text-align: left;
+    }
+    .sec-5 .about-paragraph {
+      font-size: 14px;
+      line-height: 1.25;
+      letter-spacing: -0.4px;
+      word-spacing: -1px;
+      text-align: left;
+    }
+  }

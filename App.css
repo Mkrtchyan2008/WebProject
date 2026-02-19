@@ -1,0 +1,1155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    /* animation: Anim1 2s ease forwards;  -- Համոզվիր, որ Anim1-ը սահմանված է, թե չէ կարող է չերևալ */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-bar {
+    background-color: #002d1a;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.working-hours {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    /* Եթե ցանկանում ես մի փոքր վերև բարձրացնել, ինչպես նկարում է */
+    padding-top: 5px; 
+}
+.none-content{
+    display: none;
+}
+
+.working-hours sup {
+    font-size: 8px;
+}
+.working-hours p{
+    font-size: 12px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-left: auto; /* Ապահովում է, որ սոց-ցանցերը մնան աջ կողմում */
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+    padding-top: 20px;
+}
+
+.social-icons a {
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icons a:hover {
+    color: #66b266;
+}
+
+.nav-bar {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.contact-info a {
+    cursor: pointer;
+    font-size: 20px;
+    color: #002d1a;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-info a:hover {
+    color: #004d33;
+}
+
+.menu-toggle {
+    background: #002d1a;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: #f2f2f2;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.menu-header {
+    background-color: #e0e0e0;
+    color: #003d29;
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list li {
+    padding: 18px 20px;
+    border-bottom: 1px dotted #ccc;
+    color: #003d29;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.close-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #003d29;
+    cursor: pointer;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    backdrop-filter: blur(2px);
+}
+
+.sec-1 {
+    min-height: 60vh;
+    background-image: url('imges/img1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+ .top-bar-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 820px;
+}
+
+.sec-2 {
+    min-height: 80vh;
+    padding: 50px 0;
+    max-width: 1200px;
+}
+
+.sec-2 .contents {
+    display: flex;
+    justify-content: center;
+    padding-left: 500px;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+.sec-2 .content-1 {
+    width: 430px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.sec-2 .content-2 {
+    height: 600px;
+    width: 400px;
+
+
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+
+    & .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding-top: 100px;
+        padding-left: 60px;
+
+        & .cont {
+            display: flex;
+            gap: 15px;
+
+            & img {
+                height: 60px;
+                width: 60px;
+            }
+
+            & p {
+                font-size: 20px;
+                padding-top: 15px;
+                /* font-weight: 600; */
+                color: #002d1a;
+            }
+        }
+
+    }
+}
+
+
+.sec-2 .content-1 img {
+    height: 550px;
+    width: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #002d1a !important;
+    transform: scale(0.6);
+}
+
+.swiper-pagination-bullet-active {
+    background: #002d1a !important;
+}
+
+.sec-3 {
+
+
+    & .about-section {
+        padding: 60px 0;
+        background-color: #f2f2f2;
+        font-family: 'sans-serif';
+    }
+
+    & .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    & .about-title {
+        color: #28a745;
+        /* Ագրոթեքի կանաչ գույնը */
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    & .about-paragraph {
+        color: #000;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 100;
+        /* Քո նկարում տեքստը բավականին հաստ է (bold) */
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    & .read-more-btn {
+        background: none;
+        border: none;
+        color: #28a745;
+        font-size: 20px;
+        font-weight: 800;
+        cursor: pointer;
+        padding: 0;
+        margin-top: 10px;
+        text-transform: lowercase;
+        /* Քո նկարում փոքրատառ է */
+        transition: opacity 0.3s;
+    }
+
+    & .read-more-btn:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+
+    /* Ավելացնենք սահուն հայտնվելու անիմացիա */
+    & .additional-text {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+.sec-4 {
+    min-height: 60vh;
+
+    & .tech-section {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    & .tech-title {
+        text-align: center;
+        color: #28a745;
+        font-size: 28px;
+        font-weight: 800;
+
+        text-transform: uppercase;
+    }
+
+
+    & .tech-card {
+        background: #f2f2f2;
+        /* Մոխրագույն ֆոնը՝ ինչպես նկարում */
+        margin-top: 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: transform 0.3s;
+        border: 1px solid #ddd;
+    }
+
+    & .tech-card:hover {
+        transform: translateY(-5px);
+    }
+
+    & .tech-img-box {
+        background: white;
+        margin: 10px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    & .tech-img-box img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+
+    & .tech-name {
+        padding: 15px 10px;
+        text-align: center;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .tech-name h3 {
+        color: #003d29;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /* Swiper Pagination-ի գույնը */
+    & .tech-swiper .swiper-pagination-bullet-active {
+        background: #28a745 !important;
+    }
+
+    & .tech-swiper {
+        padding-bottom: 50px !important;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .modal-content {
+        background: #fff;
+        width: 90%;
+        max-width: 700px;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        animation: scaleIn 0.3s ease;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .modal-content h3 {
+        color: #28a745;
+        margin-bottom: 10px;
+    }
+
+    .modal-content p {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Gallery Modal Styles */
+    .gallery-modal-content {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        max-width: 800px;
+        width: 90%;
+        max-height: 90vh;
+        overflow-y: auto;
+        position: relative;
+    }
+
+    .gallery-title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .gallery-main-swiper {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .gallery-main-img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f5f5f5;
+    }
+
+    .gallery-main-img img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .gallery-thumbs-swiper {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+
+    .gallery-thumb-img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: border-color 0.3s;
+    }
+
+    .gallery-thumb-img:hover {
+        border-color: #007bff;
+    }
+
+    .gallery-thumb-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-description {
+        line-height: 1.6;
+        color: #666;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+    }
+
+    /* Swiper Navigation Buttons */
+    .gallery-main-swiper .swiper-button-next,
+    .gallery-main-swiper .swiper-button-prev {
+        color: white;
+        background: rgba(0, 0, 0, 0.5);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .gallery-main-swiper .swiper-button-next:after,
+    .gallery-main-swiper .swiper-button-prev:after {
+        font-size: 20px;
+    }
+
+    .gallery-main-swiper .swiper-pagination-bullet {
+        background: white;
+        opacity: 0.7;
+    }
+
+    .gallery-main-swiper .swiper-pagination-bullet-active {
+        background: #007bff;
+        opacity: 1;
+    }
+
+    @keyframes scaleIn {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+
+        to {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+}
+
+.sec-5 {
+    min-height: 40vh;
+    font-family: sans-serif;
+
+    & h2 {
+        font-size: 30px;
+        color: #28a745;
+        padding-left: 375px;
+    }
+
+    & .about-paragraph {
+        color: #000;
+        font-size: 18px;
+        line-height: 1.6;
+        font-weight: 100;
+        /* Քո նկարում տեքստը բավականին հաստ է (bold) */
+        margin-bottom: 20px;
+        padding-top: 30px;
+        text-align: justify;
+    }
+
+    & .read-more-btn {
+        background: none;
+        border: none;
+        color: #28a745;
+        font-size: 20px;
+        font-weight: 400;
+        cursor: pointer;
+        padding: 0;
+        margin-top: 10px;
+        text-transform: lowercase;
+        /* Քո նկարում փոքրատառ է */
+        transition: opacity 0.3s;
+    }
+
+    & .read-more-btn:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+    }
+
+    /* Ավելացնենք սահուն հայտնվելու անիմացիա */
+    & .additional-text {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+}
+
+.sec-6 {
+    min-height: 100vh;
+
+    & .contents {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        & .cont-1 {
+            padding-top: 50px;
+
+        }
+
+        & .cont-1 img {
+            width: 1150px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+   
+        & .content-2 {
+            display: flex;
+            
+            & img {
+                width: 360px;
+                height: 280px;
+                object-fit: cover;
+            }
+        }
+
+        & .content-3 {
+            display: flex;
+            gap: 10px;
+
+            & img {
+                width: 160px;
+                height: 160px;
+                object-fit: contain;
+            }
+        }
+
+        & .content-4 img {
+            width: 1200px;
+            height: 400px;
+            object-fit: cover;
+        }
+
+    }
+    
+}
+
+.sec-6 .pahest {
+    display: none;
+  }
+
+& .sec-7 {
+    & .tech-section {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    & .tech-title {
+        text-align: center;
+        color: #28a745;
+        font-size: 28px;
+        font-weight: 800;
+
+        text-transform: uppercase;
+    }
+
+
+    & .tech-card {
+        background: #f2f2f2;
+        /* Մոխրագույն ֆոնը՝ ինչպես նկարում */
+        margin-top: 50px;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        transition: transform 0.3s;
+        border: 1px solid #ddd;
+    }
+
+    & .tech-card:hover {
+        transform: translateY(-5px);
+    }
+
+    & .tech-img-box {
+        background: white;
+        margin: 10px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    & .tech-img-box img {
+        max-width: 90%;
+        max-height: 90%;
+        object-fit: contain;
+    }
+
+    & .tech-name {
+        padding: 15px 10px;
+        text-align: center;
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & .tech-name h3 {
+        color: #003d29;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+    /* Swiper Pagination-ի գույնը */
+    & .tech-swiper .swiper-pagination-bullet-active {
+        background: #28a745 !important;
+    }
+
+    & .tech-swiper {
+        padding-bottom: 50px !important;
+    }
+
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .modal-content {
+        background: #fff;
+        width: 90%;
+        max-width: 700px;
+        border-radius: 10px;
+        padding: 20px;
+        position: relative;
+        animation: scaleIn 0.3s ease;
+    }
+
+    .modal-content img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        margin-bottom: 15px;
+    }
+
+    .modal-content h3 {
+        color: #28a745;
+        margin-bottom: 10px;
+    }
+
+    .modal-content p {
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+
+}
+
+.sec-8 {
+    min-height: 30vh;
+
+    & h2 {
+        padding-top: 100px;
+        font-size: 30px;
+        color: #28a745;
+        padding-left: 375px;
+    }
+
+    & .contents {
+        display: flex;
+        gap: 20px;
+        padding-top: 100px;
+    }
+
+    /* Սեկցիայի ընդհանուր տեսք */
+    .sec-8 {
+        padding: 40px 0;
+        background-color: #f8f9fa;
+        /* կամ ցանկացած այլ գույն */
+    }
+
+    .gallery-swiper {
+        padding: 20px 0 40px !important;
+        /* Տեղ pagination-ի համար */
+    }
+
+    .gallery-card {
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+    .gallery-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-img-box {
+        width: 100%;
+        height: 250px;
+        /* Կարգավորիր բարձրությունը քո ուզած չափով */
+        overflow: hidden;
+    }
+
+    .gallery-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+
+    .gallery-card:hover .gallery-img-box img {
+        transform: scale(1.1);
+    }
+
+    /* Swiper pagination-ի ոճեր */
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background: #ddd;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: #007bff;
+        /* Քո գույնը */
+        width: 12px;
+        height: 12px;
+    }
+
+
+}
+
+.sec-9 {
+
+    /* ContactCard.css */
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-card {
+        background-color: #ffffff;
+        border-radius: 60px;
+        border: 1px solid #e5e7eb;
+        padding: 50px;
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .map-section {
+        flex: 1;
+    }
+
+    .map-placeholder {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 40px;
+        background-color: #e5e7eb;
+        overflow: hidden;
+        border: 4px solid white;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-section {
+        flex: 1.2;
+        text-align: center;
+    }
+
+    .info-section h2 {
+        color: #2D8C44;
+        font-size: 28px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .info-section h3 {
+        color: #0B4D3C;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        color: #0B4D3C;
+        margin-bottom: 30px;
+    }
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .icon-wrapper {
+        color: #1C6B59;
+        font-size: 24px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        background-color: #1C6B59;
+        color: white;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+
+
+    /* Responsive դիզայն հեռախոսների համար */
+    @media (max-width: 768px) {
+        .contact-card {
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 30px;
+        }
+
+        .contact-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@keyframes slideFade {
+    from {
+        opacity: 0.5;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer-container {
+    background-color: #003319;
+    color: white;
+    padding-top: 40px;
+    height: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto 30px;
+    padding: 0 20px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.footer-booking h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.footer-booking img {
+    height: 100px;
+    width: 200px;
+    margin-left: 150px;
+}
+
+.booking-form {
+    display: flex;
+    border: 1px solid white;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.booking-input {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    color: white;
+    outline: none;
+    flex: 1;
+}
+
+.booking-button {
+    background: white;
+    color: #003319;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    & a {
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+}
+
+.social-icon {
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.social-icon:hover {
+    opacity: 0.7;
+}
+
+.footer-logo-bar {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 45px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
